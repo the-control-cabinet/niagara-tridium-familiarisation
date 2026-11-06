@@ -1,0 +1,6 @@
+lab,driver,device,points (first set),access,source repo
+2,BACnet/IP,YABE room controller simulator,13 objects incl. temperature (AI) and setpoint (AV 0),read; write to simulator only,bacnet-ip-network-explorer
+2,BACnet/IP,Plant-points BACnet server,boiler flow/return (AI 1-2); pressure (AI 3); current (AI 4); demands (BI 1-5); boiler state (MSI 1); zone temps (AI 101-118),read only,plant-points-bacnet-server
+3,Trend,Trend IQ411 (training rig),rig I/O and strategy points (from the IQ411 I/O schedule),read; write on the rig only,trend-iq411-commissioning
+4,Modbus TCP,ESP32 Modbus server,plant points per the register map,read only,esp32-modbus-server-plant-points
+9,S7 (optional),S7-1200 CPU 1214C DC/DC/DC,rig tags from the PLC tag list,read; write on the rig only,plc-reimplementation-iec61131
